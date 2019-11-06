@@ -8,6 +8,7 @@ public class Student {
     private String lastName;
     private String country;
     private String favouriteLanguage;
+    private String[] operatingSystems;
 
 
     private LinkedHashMap<String,String> countryOptions;
@@ -15,11 +16,6 @@ public class Student {
 
     public Student(){
         generateCountryOptions();
-    }
-
-    public Student(String firstName, String lastName){
-        setFirstName(firstName);
-        setLastName(lastName);
     }
 
     private void generateCountryOptions(){
@@ -35,7 +31,7 @@ public class Student {
         return firstName;
     }
 
-    private void setFirstName(String firstName) {
+    public  void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
@@ -44,7 +40,7 @@ public class Student {
         return lastName;
     }
 
-    private void setLastName(String lastName) {
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
@@ -62,6 +58,14 @@ public class Student {
 
     public void setFavouriteLanguage(String favouriteLanguage) {
         this.favouriteLanguage = favouriteLanguage;
+    }
+
+    public String[] getOperatingSystems() {
+        return operatingSystems;
+    }
+
+    public void setOperatingSystems(String[] operatingSystems) {
+        this.operatingSystems = operatingSystems;
     }
 
     public LinkedHashMap<String, String> getCountryOptions() {

@@ -17,7 +17,9 @@
         Country: <form:select path="country">
             <form:options items="${student.countryOptions}" />
         </form:select>
-        
+
+        <br><br>
+
         Java <form:radiobutton path="favouriteLanguage" value="Java" />
         C# <form:radiobutton path="favouriteLanguage" value="C#" />
         C++ <form:radiobutton path="favouriteLanguage" value="C++" />
@@ -26,8 +28,15 @@
 
         <br><br>
 
+        Linux <form:checkbox path="operatingSystems" value="Linux" />
+        Windows <form:checkbox path="operatingSystems" value="Windows" />
+        Mac <form:checkbox path="operatingSystems" value="Mac" />
+        TempleOS <form:checkbox path="operatingSystems" value="TempleOS" />
+
+        <br><br>
+
         <input type="submit" value="Submit"/>
-        
+
     </form:form>
 
 </body>
