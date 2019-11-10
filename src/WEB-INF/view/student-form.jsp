@@ -7,10 +7,11 @@
 </head>
 <body>
     <form:form action="processForm" modelAttribute="student">
-        
+
         First name: <form:input path="firstName"/>
         <br><br>
-        Last name: <form:input path="lastName"/>
+        Last name (*): <form:input path="lastName"/>
+        <form:errors path="lastName" cssClass="error"/>
 
         <br><br>
 
@@ -24,7 +25,7 @@
         C# <form:radiobutton path="favouriteLanguage" value="C#" />
         C++ <form:radiobutton path="favouriteLanguage" value="C++" />
         Python <form:radiobutton path="favouriteLanguage" value="Python" />
-        
+
 
         <br><br>
 
