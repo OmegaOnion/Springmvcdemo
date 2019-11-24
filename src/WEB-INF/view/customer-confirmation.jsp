@@ -9,9 +9,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Customer Confirmation of data</title>
 </head>
 <body>
-Customer confirmed as ${customer.firstName} ${customer.lastName}
+<p>Customer confirmed as ${customer.firstName} ${customer.lastName}</p>
+<p>Address: ${customer.postcode}</p>
+<p>Customer has ${customer.freePasses} free passes</p>
+<p>Customer has enrolled on the course: ${customer.courseCode}</p>
+
 </body>
 </html>
